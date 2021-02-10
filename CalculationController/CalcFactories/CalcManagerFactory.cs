@@ -109,7 +109,9 @@ namespace CalculationController.CalcFactories
 
                 var cpf = new CalcParametersFactory();
                 var calcParameters = cpf.MakeCalculationParametersFromConfig(csps,forceRandom);
-
+                //csps.ResultPath
+                //Deleting everything in the output directory
+              
                 var sqlFileName = Path.Combine(csps.ResultPath, "Results.sqlite");
                 var builder = new ContainerBuilder();
                 RegisterEverything(sim, csps.ResultPath, csps, csps.CalcTarget, builder,

@@ -17,8 +17,8 @@
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="2020.1.0" />
     <PackageReference Include="NullCheckAnalyzer" Version="1.0.0.3" />
-    <PackageReference Include="OxyPlot.Core" Version="2.1.0-unstable.1431" />
-    <PackageReference Include="OxyPlot.SkiaSharp" Version="2.1.0-unstable.1431" />
+    <PackageReference Include="OxyPlot.Core" Version="2.1.0-Preview1" />
+    <PackageReference Include="OxyPlot.SkiaSharp" Version="2.1.0-Preview1" />
     <PackageReference Include="Roslynator.Analyzers" Version="2.3.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

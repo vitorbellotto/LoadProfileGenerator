@@ -36,7 +36,7 @@
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="2019.1.3" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-    <PackageReference Include="OxyPlot.Wpf" Version="2.0.0-unstable1035" />
+    <PackageReference Include="OxyPlot.Wpf" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CalculationController\CalculationController.csproj" />
@@ -67,9 +67,9 @@
     <ReferencePath Include="C:\Users\pan2\.nuget\packages\pdfsharp-migradoc-gdi\1.32.4334\lib\net20\MigraDoc.RtfRendering.dll" />
     <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" />
     <ReferencePath Include="C:\Users\pan2\.nuget\packages\newtonsoft.json\12.0.2\lib\net45\Newtonsoft.Json.dll" />
-    <ReferencePath Include="C:\Users\pan2\.nuget\packages\oxyplot.core\2.0.0-unstable1035\lib\net45\OxyPlot.dll" />
-    <ReferencePath Include="C:\Users\pan2\.nuget\packages\oxyplot.pdf\2.0.0-unstable1035\lib\net452\OxyPlot.Pdf.dll" />
-    <ReferencePath Include="C:\Users\pan2\.nuget\packages\oxyplot.wpf\2.0.0-unstable1035\lib\net452\OxyPlot.Wpf.dll" />
+    <ReferencePath Include="C:\Users\pan2\.nuget\packages\oxyplot.core\2.1.0-Preview1\lib\net45\OxyPlot.dll" />
+    <ReferencePath Include="C:\Users\pan2\.nuget\packages\oxyplot.pdf\2.1.0-Preview1\lib\net452\OxyPlot.Pdf.dll" />
+    <ReferencePath Include="C:\Users\pan2\.nuget\packages\oxyplot.wpf\2.0.0\lib\net452\OxyPlot.Wpf.dll" />
     <ReferencePath Include="C:\Users\pan2\.nuget\packages\pdfsharp-migradoc-gdi\1.32.4334\lib\net20\PdfSharp.Charting.dll" />
     <ReferencePath Include="C:\Users\pan2\.nuget\packages\pdfsharp-migradoc-gdi\1.32.4334\lib\net20\PdfSharp.dll" />
     <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationCore.dll" />

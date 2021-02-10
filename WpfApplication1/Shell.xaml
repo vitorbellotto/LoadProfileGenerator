@@ -1292,6 +1292,15 @@
                 <!--<MenuItem Header="Convert all real devices in all households to device categories" Name="ConvertAllDevices" Click="ConvertAllDevices_Click"  IsEnabled="{Binding IsMenuEnabled}" />
                 <MenuItem Header="Make graphics test" Name="MakeGraphics" Click="MakeGraphics_Click"  IsEnabled="{Binding IsMenuEnabled}" />-->
             </MenuItem>
+            <MenuItem Header="Python Script">
+                <MenuItem
+                    Name="pythonscript"
+                    Click="Python_Script"
+                    Header="Python Script" />
+                <!--<MenuItem Header="Convert all affordances to the new type" Name="ConvertAffordancesCheck" Click="ConvertAffordances_OnClick"  IsEnabled="{Binding IsMenuEnabled}" />-->
+                <!--<MenuItem Header="Convert all real devices in all households to device categories" Name="ConvertAllDevices" Click="ConvertAllDevices_Click"  IsEnabled="{Binding IsMenuEnabled}" />
+                <MenuItem Header="Make graphics test" Name="MakeGraphics" Click="MakeGraphics_Click"  IsEnabled="{Binding IsMenuEnabled}" />-->
+            </MenuItem>
 
         </Menu>
 

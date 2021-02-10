@@ -33,7 +33,6 @@ namespace SimulationEngineLib
             }
         }
 
-
         [NotNull]
         private static List<TemplatePersonEntry> MakeAllTemplatePersonData([NotNull] Simulator sim)
         {

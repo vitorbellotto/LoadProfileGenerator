@@ -1,0 +1,77 @@
+﻿<Window
+    x:Class="LoadProfileGenerator.AboutWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="About this program"
+    Width="600"
+    Height="450">
+    <Grid Margin="5,5,0,5" HorizontalAlignment="Left" Width="585" RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.117"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*" />
+            <ColumnDefinition Width="58*"/>
+            <ColumnDefinition Width="521*"/>
+            <ColumnDefinition Width="auto   " />
+        </Grid.ColumnDefinitions>
+
+        <Image
+            Grid.Row="0"
+            Grid.Column="2"
+            Width="64"
+            Height="64"
+            Margin="242.451,5,215,5"
+            HorizontalAlignment="Center"
+            Source="/LoadProfileGenerator;component/Images/lpgicon4b.ico"
+            Stretch="Fill" />
+        <TextBlock
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Margin="5,5,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="14"
+            TextWrapping="Wrap">
+            Load Profile Generator<LineBreak />
+            (c) 2010-2014 (up to version 1.3.5) TU Chemnitz, Not Prof Technische Thermodynamik<LineBreak />
+            Developed by Noah Pflugradt<LineBreak />
+            <LineBreak />
+            After the release of the sourcecode the development continued as private project. Therefore:<LineBreak />
+            (c) 2014-2017 (for Versions after 1.3.5)  Noah Pflugradt<LineBreak />
+            <LineBreak />
+            This product includes software developed by the TU Chemnitz, Prof. Technische Thermodynamik and its contributors.<LineBreak />
+            <LineBreak />
+            Developed with assistance from Ms. Kühnlenz.</TextBlock>
+        <TextBox
+            Grid.Row="2"
+            Grid.Column="0"
+            Height="23"
+            Margin="5"
+            Foreground="Blue"
+            IsEnabled="True"
+            IsHitTestVisible="True"
+            IsReadOnly="True"
+            Text="Noah.Pflugradt@gmail.com" Grid.ColumnSpan="3" />
+        <Button
+            Grid.Row="3"
+            Grid.Column="3"
+            Width="75"
+            Height="23"
+            Margin="5"
+            Click="BtnCloseClick"
+            Content="ok" />
+    </Grid>
+</Window>

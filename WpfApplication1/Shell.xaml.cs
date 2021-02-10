@@ -53,6 +53,9 @@ using JetBrains.Annotations;
 using LoadProfileGenerator.Presenters;
 using LoadProfileGenerator.Presenters.BasicElements;
 using Microsoft.Win32;
+using IronPython.Hosting;
+using Microsoft.Scripting;
+using Microsoft.Scripting.Hosting;
 
 namespace LoadProfileGenerator {
     /// <summary>
@@ -363,6 +366,29 @@ namespace LoadProfileGenerator {
                 aw.ShowDialog();
             }
             catch (Exception ex) {
+                MessageWindowHandler.Mw.ShowDebugMessage(ex);
+                Logger.Exception(ex);
+            }
+        }
+
+        [SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes")]
+        private void Python_Script([CanBeNull] object sender, [CanBeNull] RoutedEventArgs e)
+        {
+            try
+            {
+                ScriptEngine pythonEngine = Python.CreateEngine();
+                ScriptSource pythonScript = pythonEngine.CreateScriptSourceFromString("print('hello')");
+                object thing = pythonScript.Execute();
+                String Result = "nothing";
+                if (thing != null)
+                    Result = thing.ToString();
+
+                Logger.Info(Result);
+                var aw = new PythonWindow();
+                aw.ShowDialog();
+            }
+            catch (Exception ex)
+            {
                 MessageWindowHandler.Mw.ShowDebugMessage(ex);
                 Logger.Exception(ex);
             }

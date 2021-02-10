@@ -701,7 +701,7 @@ namespace Database {
             var now = DateTime.Now;
             Logger.Debug("Loaded " + description + " (Part " + step + ")  in " +
                          (now - lasttime).TotalMilliseconds.ToString("0", CultureInfo.CurrentCulture) +
-                         " milliseconds");
+                         " milliseconds.");
             step++;
             lasttime = now;
         }
